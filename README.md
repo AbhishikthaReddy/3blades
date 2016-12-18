@@ -4,7 +4,7 @@
 
 ## Overview
 
-3Blades was born to help empower data analysts with Machine Learning. 
+3Blades was born to help empower data analysts with Machine Learning. This repository is the main entry point for all 3Blades resources.
 
 3Blades provides:
 
@@ -19,6 +19,3 @@
 
 - Documentation
 - Community (Bugs, feature requests, general questions)
-- Bug Tracker
-- Code
-- Transifex (Translate 3Blades!)
