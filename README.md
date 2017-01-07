@@ -4,21 +4,54 @@
 
 ## Overview
 
-3Blades was born to help empower data scientists with an open source tool to help them be more productive. It started as a simple container spawner, file manager and offered some basic integrations to third party services. 3Blades, data scientists can spawn Notebook Servers, data source containers (including Spark), 3Blades 
+3Blades was born to accelerate modern data science. Import data, use Notebook servers for exploratory data analysis, create visualizations and publish trained machine learning models as RESTful endpoints in their native languages. All from one location!
 
-This repository is the main entry point for all 3Blades resources.
+This repository is the main entry point for all 3Blades application resources.
 
 ## Features
 
 - A quick way to manage Notebook servers among team members.
-- Launch variety of data source containers, including Spark.
+- Connect to a variety of data source containers, including Spark, either as local containers or via SSH.
 - Automate common tasks with cron jobs, such as train/test splits.
 - Publish trained models as RESTful APIs, secured with user API tokens, in their native language.
-- Link Notebook servers, job servers and model servers to datasources at launch time.
 - Create and share visualization dashboards to tell your data story.
-- Empower data analysts with guided Machine Learning.
+
+## Repos
+
+Main frontend and backend will be merged into one repo, once rewrite has been completed. For now, they are maintained independently:
+ 
+- [RESTful service](https://github.com/3blades/app-backend): based on Flask, Celery, SQLAlchemy, RESTplus.
+- [Frontend](https://github.com/3blades/react-frontend): ReactJs front end.
+
+There are other software artifacts that the application uses, to work correctly:
+
+- [Reverse proxy](https://github.com/3blades/openresty): used to route traffice correctly to each micro service and user server environments.
+- [Notifications service](https://github.com/3blades/notifications-server): updates service and container statuses.
+- [Statistics service](https://github.com/3blades/docker-stats): used to log basic run stats for user services (stop/start datetimes, file outputs, etc).
+- [Log service](https://github.com/3blades/logspout): obtaines and optionally exports syslogs from docker containers. Also used for log streams in UI.
+- [NBViewer](https://github.com/3blades/nbviewer): for *.ipynb shares.
+
+Infrastructure elements:
+
+- PosgreSQL
+- Redis
+- RabbitMQ
+- SMTP
+- NFS
+
+Currently we are using [AWS](https://aws.amazon.com/) to manage as many of the above services as possible. 
+
+- Compute --> EC2
+- Storage --> EBS, S3, EFS
+- PosgreSQL --> RDS
+- Redis --> Elasticache
+- SMTP --> SES
+
+Other services:
+
+RabbitMQ --> [CloudAMQP](https://www.cloudamqp.com/)
 
 ## Resources
 
-- Documentation
-- Community (Bugs, feature requests, general questions)
+- [WIP] [Documentation](https://support.3blades.io)
+- [WIP] [Community (Bugs, feature requests, general questions)](https://github.com/3blades/3blades/issues)
