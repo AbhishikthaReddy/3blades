@@ -19,37 +19,46 @@ This repository is the main entry point for all 3Blades application resources.
 ## Repos
 
 Main frontend and backend will be merged into one repo, once rewrite has been completed. For now, they are maintained independently:
- 
+
 - [RESTful service](https://github.com/3blades/app-backend): based on Flask, Celery, SQLAlchemy, RESTplus.
 - [Frontend](https://github.com/3blades/react-frontend): ReactJs front end.
 
-There are other software artifacts that the application uses, to work correctly:
+Other software artifacts:
 
 - [Reverse proxy](https://github.com/3blades/openresty): used to route traffice correctly to each micro service and user server environments.
 - [Notifications service](https://github.com/3blades/notifications-server): updates service and container statuses.
 - [Statistics service](https://github.com/3blades/docker-stats): used to log basic run stats for user services (stop/start datetimes, file outputs, etc).
 - [Log service](https://github.com/3blades/logspout): obtaines and optionally exports syslogs from docker containers. Also used for log streams in UI.
-- [NBViewer](https://github.com/3blades/nbviewer): for *.ipynb shares.
+- [NBViewer](https://github.com/3blades/nbviewer): for `.ipynb` shares.
 
-Infrastructure elements:
+## Infrastructure elements:
 
+- Docker Swarm
+- NFS
 - PosgreSQL
 - Redis
 - RabbitMQ
 - SMTP
-- NFS
 
-Currently we are using [AWS](https://aws.amazon.com/) to manage as many of the above services as possible. 
+Currently we are using [AWS](https://aws.amazon.com/) to manage as many of the above services as possible.
 
-- Compute --> EC2
-- Storage --> EBS, S3, EFS
-- PosgreSQL --> RDS
-- Redis --> Elasticache
-- SMTP --> SES
+- Compute: EC2
+- Networking: VPC
+- PosgreSQL: RDS
+- Redis: Elasticache
+- Storage: EBS, S3, EFS
+- SMTP: SES
 
 Other services:
 
-RabbitMQ --> [CloudAMQP](https://www.cloudamqp.com/)
+RabbitMQ: [CloudAMQP](https://www.cloudamqp.com/)
+
+## DevOps
+
+- Code quality: [Code Climate](https://travis-ci.org/) and [Landscape](https://travis-ci.org/)
+- Continuous Integration: [Travis-CI](https://travis-ci.org/)
+- Coverage: [Codecov](https://codecov.io/)
+- Version control: [GitHub](https://github.com)
 
 ## Resources
 
