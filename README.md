@@ -4,7 +4,7 @@
 
 ## Overview
 
-3Blades was born to accelerate modern data science. Import data, use Notebook servers for exploratory data analysis, create visualizations and publish trained machine learning models as RESTful endpoints in their native languages. All from one location!
+3Blades was born to **accelerate modern data science**. Import data, use Notebook servers for exploratory data analysis, create visualizations and publish trained machine learning models as RESTful endpoints in their native languages. All from one location!
 
 This repository is the main entry point for all 3Blades application resources.
 
