@@ -46,13 +46,13 @@ Other software artifacts:
 - [Notifications service](https://github.com/3blades/notifications-server): updates service and container statuses.
 - [Reverse proxy](https://github.com/3blades/openresty): used to route traffic correctly to each micro service and user server environments.
 - [Statistics service](https://github.com/3blades/docker-stats): used to log basic run stats for user services (stop/start datetimes, file outputs, etc).
-- [Job server](https://github.com/3blades/job-server)
-- [Model server](https://github.com/3blades/model-server)
-- [Notebook server](https://github.com/3blades/notebook-server)
 
 User container servers:
 
-- [Core server](core-server)
+- [Core server](core-server): parent server for job-server, model-server and notebook-server.
+- [Job server](https://github.com/3blades/job-server): server to run scheduled jobs, useful for recurring and batch processes.
+- [Model server](https://github.com/3blades/model-server): server to publish models as RESTful endpoints, in their native language.
+- [Notebook server](https://github.com/3blades/notebook-server): notebook server used for exploratory data analysis.
 
 ## Infrastructure elements:
 
