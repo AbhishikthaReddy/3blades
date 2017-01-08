@@ -3,7 +3,6 @@
 # 3Blades
 
 - [Overview](https://github.com/3Blades/3blades/blob/master/README.md#overview)
-- [Features](https://github.com/3Blades/3blades/blob/master/README.md#features)
 - [Repos](https://github.com/3Blades/3blades/blob/master/README.md#repos)
 - [Infrastructure elements](https://github.com/3Blades/3blades/blob/master/README.md#infrastructure-elements)
 - [DevOps](https://github.com/3Blades/3blades/blob/master/README.md#devops)
