@@ -9,7 +9,6 @@
 [DevOps](https://github.com/3Blades/3blades/blob/master/README.md#devops)
 [Resources](https://github.com/3Blades/3blades/blob/master/README.md#resources)
 
-
 ## Overview
 
 This repository is the main entry point for all 3Blades application resources.
@@ -97,3 +96,12 @@ RabbitMQ: [CloudAMQP](https://www.cloudamqp.com/)
 - [WIP] [Issue tracking](https://github.com/3Blades/3blades/issues)
 - [WIP] [Installation and configuration](https://github.com/3Blades/docs)
 - [WIP] [Support](https://support.3blades.io)
+
+## Copyright and license
+
+Copyright © 2016-2017 3Blades, LLC. All rights reserved, except as follows. Code
+is released under the BSD 3.0 license. The README.md file, and files in the
+"docs" folder are licensed under the Creative Commons Attribution 4.0
+International License under the terms and conditions set forth in the file
+"LICENSE.docs". You may obtain a duplicate copy of the same license, titled
+CC-BY-SA-4.0, at http://creativecommons.org/licenses/by/4.0/.
