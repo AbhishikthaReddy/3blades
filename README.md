@@ -6,7 +6,7 @@
 - [Repos](https://github.com/3Blades/3blades/blob/master/README.md#repos)
 - [Infrastructure elements](https://github.com/3Blades/3blades/blob/master/README.md#infrastructure-elements)
 - [DevOps](https://github.com/3Blades/3blades/blob/master/README.md#devops)
-- [Resources](https://github.com/3Blades/3blades/blob/master/README.md#resources)
+- [Documentation](https://github.com/3Blades/3blades/blob/master/README.md#documentation)
 
 ## Overview
 
