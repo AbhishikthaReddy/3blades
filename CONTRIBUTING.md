@@ -16,7 +16,7 @@ We encourage the use of forks, even for our core maintainers. The following step
 1. Fork `https://github.com/3blades/3blades` repository to your user organization.
 1. Clone your copy of `https://github.com/your-username/3blades` onto your machine using
 `git clone https://github.com/your-username/3blades`.
-1. Specify a new remote upstream repository that will be synced with the fork: `git remote add upstream https://github.com/3blades/3blades.git`
+1. Specify a new remote upstream repository that will be synced with the fork: `git remote add upstream https://github.com/3blades/3blades.git`.
 1. Verify correct `upstream` configuration: `git remote -v`
 1. Fetch the branches and their respective commits from the upstream repository. Commits to master will be stored in a local branch, `upstream/master`.
 1. Checkout your fork's local `feature` or `fix` branch: `git checkout my-fix-or-feature-branch`.
@@ -26,7 +26,7 @@ We encourage the use of forks, even for our core maintainers. The following step
 
 ## Commit Messages
 
-Commit messages in `<repo-name>` start with a prefix that coincides with an issue `label`, then `/`, then `iss[#]`, such as `fix/iss3`. It's possible that an issue for the problem you are trying to solve does not exist, in that case, please help us open one. Even little things like typos in a document are worth documenting. Labels listed below:
+Commit messages in `3blades` start with a prefix that coincides with an issue `label`, then `/`, then `iss[#]`, such as `fix/iss3`. It's possible that an issue for the problem you are trying to solve does not exist, in that case, please help us open one. Even little things like typos in a document are worth documenting. Labels listed below:
 
 - `fix`: If the commit is working towards a bug fix.
 - `feature`: If the commit is working towards a new feature.
