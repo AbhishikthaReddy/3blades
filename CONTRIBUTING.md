@@ -1,6 +1,6 @@
 # Contributing Guidelines
 
-Interested in making a contribution? Great! Just read through this guide and you should be good to go! If you have any questions or concerns, feel free to reach out to us in our Slack [community channel](https://slackin-tkscnxhpky.now.sh/).
+Interested in making a contribution? Great! Just read through this guide and you should be good to go! If you have any questions or concerns, feel free to reach out to us in our Slack [community channel](https://slackin-pypmyuhqds.now.sh/).
 
 ## TOC
 
@@ -13,26 +13,27 @@ Interested in making a contribution? Great! Just read through this guide and you
 
 We encourage the use of forks, even for our core maintainers. The following steps describe the procedure to create a new fork and contribute back to the upstream repo:
 
-1. Fork `https://github.com/3blades/3blades` repository to your user organization.
-1. Clone your copy of `https://github.com/your-username/3blades` onto your machine using
-`git clone https://github.com/your-username/3blades`.
+1. Fork `https://github.com/3blades/3blades`.
+1. Clone `https://github.com/your-username/3blades`.
 1. Specify a new remote upstream repository that will be synced with the fork: `git remote add upstream https://github.com/3blades/3blades.git`.
-1. Verify correct `upstream` configuration: `git remote -v`
-1. Fetch the branches and their respective commits from the upstream repository. Commits to master will be stored in a local branch, `upstream/master`.
 1. Checkout your fork's local `feature` or `fix` branch: `git checkout my-fix-or-feature-branch`.
-1. Make the necessary changes in your `my-fix-or-feature-branch` branch. .
-1. Merge the changes from your local `my-fix-or-feature-branch` branch with `upstream/master`, ensuring that your local changes are in sync with upstream master branch: `git merge upstream/master`.
+1. Make the necessary changes in your `my-fix-or-feature-branch` branch.
+1. Push changes to your fork: `git push origin master`.
 1. Submit a pull request to `https://github.com/3blades/3blades` and await review.
+
+> Note: it's possible that upstream master branch was updated while you were working. Update your local branch with latest commits from upstream master: `git fetch upstream`, `git checkout my-fix-or-feature-branch`, `git merge upstream/master`.
 
 ## Commit Messages
 
-Commit messages in `3blades` start with a prefix that coincides with an issue `label`, then `/`, then `iss[#]`, such as `fix/iss3`. It's possible that an issue for the problem you are trying to solve does not exist, in that case, please help us open one. Even little things like typos in a document are worth documenting. Labels listed below:
+Commit messages in react-frontend start with one of the following prefixes:
 
 - `fix`: If the commit is working towards a bug fix.
 - `feature`: If the commit is working towards a new feature.
 - `chore`: If the commit was a chore, like updating a dependency or updating Travis.
 - `doc`: If the commit is a change to documentation.
 - `test`: If the commit contains a change to the test suite.
+
+Add a `/` and a tidy description after the prefix, such as `docs/correct-title`.
 
 ## Issues
 
@@ -42,6 +43,8 @@ When reporting issues:
 - If applicable, include stack trace.
 - Big log files are best viewed in gist (https://gist.github.com). Make sure your gist is public.
 - Log files may have sensitive information, please remove this information if at all possible.
+
+> We have included an `Issue Template` as a guide.
 
 ## Quick contribution tips and guidelines
 
@@ -57,7 +60,7 @@ We are constantly cleaning code and re factoring, and understand there is almost
 
 ### Talking to other 3Blades users and contributors
 
-We primarily use our Slack community channel to communicate with 3Blades users and contributors. You can sign up for a free account [here](https://slackin-tkscnxhpky.now.sh/).
+We primarily use our Slack community channel to communicate with 3Blades users and contributors. You can sign up for a free account [here](https://slackin-pypmyuhqds.now.sh/).
 
 ### Conventions and Coding Style
 
